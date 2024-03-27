@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create</title>
+</head>
+<body>
+<h1>Enter student details</h1>
+
+<form action="insert" method="post">
+<table>
+<tr><th>Name:</th><td><input type="text" name="name"></td></tr>
+
+<tr><th>Mobile:</th><td><input type="tel" name="mobile" pattern="{0-9}[10]"></td></tr>
+
+<tr><th>Email:</th><td><input type="email" name="email"></td></tr>
+
+<tr><th>Gender:</th><td><input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female</td></tr>
+
+<tr><th>Date Of Birth:</th><td><input type="date" name="dob"></td></tr>
+
+<tr><th>Address:</th><td><textarea rows="5" cols="30" name="address"></textarea></td></tr>
+
+<tr><th>Languages known:</th><td>
+<input type="checkbox" name="language" value="English">English
+<input type="checkbox" name="language" value="Kannada">Kannada
+<input type="checkbox" name="language" value="Hindi">Hindi</td></tr>
+
+<tr><th>Country:</th><td>
+<select name="country">
+<option>India</option>
+<option>South Korea</option>
+<option>Sri Lanka</option>
+</select></td></tr>
+
+<tr>
+<td><button type="reset">Cancel</button></td>
+<td><button>Submit</button></td>
+</tr>
+</table>
+
+</form>
+
+<br>
+<br>
+<a href="Home.html"><button>Home</button></a>
+</body>
+</html>
